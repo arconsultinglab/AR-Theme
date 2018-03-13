@@ -2,18 +2,20 @@
 
 <header class="page-header">
 	<div class="small-container">
-		<h1>Posts</h1>
+		<h1>
+			<?php the_title(); ?>
+		</h1>
 	</div>
 </header>
 
 <div class="small-container">
 
-	<?php 
-		
+	<?php
+
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
-		
+
 		 get_template_part( 'content-basic', get_post_format() );
-		
+
 		endwhile; ?>
 
 	<div class="posts-links">
@@ -28,4 +30,4 @@
 
 <?php endif; ?>
 
-<?php get_footer(); 
+<?php get_footer();
