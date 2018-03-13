@@ -1,10 +1,11 @@
+<?php /* Template Name: Thoughts */ ?>
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <header class="page-header bright-header thoughts-header">
 	<div class="small-container">
-		<h1>
+		<h1 class="entry-title">
 			<?php the_title(); ?>
 		</h1>
 		<?php the_content(); ?>
@@ -51,5 +52,4 @@
 	</div>
 </section>
 
-<?php get_footer(); 
-
+<?php get_footer();
