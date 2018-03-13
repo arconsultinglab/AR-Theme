@@ -1,18 +1,23 @@
+<?php /* Template Name: Projects Page */ ?>
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <header class="page-header bright-header">
 	<div class="small-container">
-		<h1>
+		<h1 class="entry-title" >
 			<?php the_title(); ?>
-			<?php the_content(); ?>
+
 		</h1>
 	</div>
 </header>
 
 <?php endwhile; endif; ?>
-
+<section class="section-content">
+	<div class="small-container">
+<?php the_content(); ?>
+</div>
+</section>
 <section id="projects">
 	<div class="container">
 

@@ -23,7 +23,7 @@
 </head>
 
 <body>
-	<h1 class="screen-reader-text"><?php the_title(); ?></h1>
+	<h1 class="screen-reader-text entry-title" ><?php the_title(); ?></h1>
 	<a class="screen-reader-text" href="#main-content">Skip Navigation</a>
 
 	<header class="main-nav-outer">

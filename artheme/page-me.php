@@ -1,10 +1,11 @@
+<?php /* Template Name: About Me */ ?>
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <header class="page-header bright-header tania-header">
 	<div class="small-container">
-		<h1>
+		<h1 class="entry-title" >
 			<?php the_title(); ?>
 		</h1>
 		<p>Designer, developer, autodidact.</p>

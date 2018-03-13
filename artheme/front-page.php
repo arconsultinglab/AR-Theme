@@ -5,7 +5,7 @@
 <header class="header gradient">
 	<div class="container">
 		<div class="header-main">
-			<h1>I'm a web <span class="primary">designer</span>/<span class="secondary">developer</span><br> who loves sharing knowledge.</h1>
+			<h1 class="entry-title" >I'm a web <span class="primary">designer</span>/<span class="secondary">developer</span><br> who loves sharing knowledge.</h1>
 			<?php the_content(); ?>
 			<a class="github-button" href="https://github.com/taniarascia" data-show-count="true" data-size="large" aria-label="Follow @taniarascia on GitHub">Follow</a>
 			<a class="twitter-follow-button" data-size="large" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
@@ -78,7 +78,7 @@
 
 			$latest = new WP_Query( $args );
 
-			if ( $latest->have_posts() ) :  while ( $latest->have_posts() ) : $latest->the_post(); 
+			if ( $latest->have_posts() ) :  while ( $latest->have_posts() ) : $latest->the_post();
 
 				 get_template_part( 'content', get_post_format() );
 
@@ -101,7 +101,7 @@
 
 			$popular = new WP_Query( $args );
 
-			if ( $popular->have_posts() ) :  while ( $popular->have_posts() ) : $popular->the_post(); 
+			if ( $popular->have_posts() ) :  while ( $popular->have_posts() ) : $popular->the_post();
 
 				 get_template_part( 'content', get_post_format() );
 
@@ -126,7 +126,7 @@
 
 			$thoughts = new WP_Query( $args );
 
-			if ( $thoughts->have_posts() ) :  while ( $thoughts->have_posts() ) : $thoughts->the_post(); 
+			if ( $thoughts->have_posts() ) :  while ( $thoughts->have_posts() ) : $thoughts->the_post();
 
 				 get_template_part( 'content', get_post_format() );
 

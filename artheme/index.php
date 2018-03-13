@@ -1,6 +1,13 @@
+<?php /* Template Name: Content Page */ ?>
 <?php get_header(); ?>
 
-
+<header class="page-header">
+	<div class="small-container">
+		<h1 class="entry-title" >
+			<?php the_title(); ?>
+		</h1>
+	</div
+</header>
 
 <div class="small-container">
 
