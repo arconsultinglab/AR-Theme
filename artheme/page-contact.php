@@ -13,9 +13,9 @@
 </header>
 
 <section class="section-content">
-	<div class="small-container">
+	<div class="small-container"> Texto en el Small Container </div>
 		<?php the_content(); ?>
-	</div>
+
 </section>
 
 <?php endwhile; endif; ?>

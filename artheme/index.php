@@ -1,4 +1,4 @@
-<?php /* Template Name: Content Page */ ?>
+<?php /* Template Name: Index Page */ ?>
 <?php get_header(); ?>
 
 <header class="page-header">
