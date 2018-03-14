@@ -3,10 +3,10 @@
 <!-- Hero -->
 
 <main id="content" role="main">
-    <article >
-        <h1>Hello AMPHTML World!</h1>
-    </article>
+    <h2 class="blog-post-title"><?php the_title(); ?></h2>
+	<p class="blog-post-meta"><?php the_date(); ?> by <a href="#"><?php the_author(); ?></a></p>
 
+ <?php the_content(); ?>
 
 
 <?php get_footer(); ?>
