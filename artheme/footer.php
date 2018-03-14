@@ -1,73 +1,141 @@
-  </main>
-<!--/ Discover mobile-->
-<!-- Footer -->
-<footer class="travel-footer overflow-hidden">
+<?php if ( !is_page( 'resume' ) ) { ?>
+<section class="newsletter">
+	<div class="small-container text-center">
+		<h2>Tania's List</h2>
+		<p>My tutorials, guides, and articles for <strong>web designers, developers, and autodidacts</strong>, sent out once a month or so. No bullshit, ads, or tricks.</p>
+		<div id="mc_embed_signup">
+			<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<label for="mce-EMAIL"><span class="screen-reader-text">Email</span></label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ec794fab6e35a491a001cc25d_5276386071" tabindex="-1" value=""></div>
+				<div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
+			</form>
+		</div>
+	</div>
+</section>
 
-  <div class="relative bg-black">
 
-    <!-- Angle -->
-    <div class="travel-footer-angle-block absolute top-0 bottom-0 right-0 xs-hide sm-hide"></div>
-    <div class="travel-footer-angle absolute xs-hide sm-hide"></div>
-    <!--/ Angle -->
-
-    <!-- Right column -->
-    <div class="travel-newsletter-signup">
-      <header class="max-width-3 mx-auto px1 md-px2">
-        <h4 class="travel-footer-right-column-heading travel-spacing-none h2 mb3 blue">Want travel deals<br>straight to your inbox?</h4>
-        <div class="h4 bold mb1">Sign up to our newsletter</div>
-      </header>
-      <div class="relative">
-        <div class="travel-footer-input-bg bg-black absolute right-0 left-0 md-hide lg-hide"></div>
-        <div class="max-width-3 mx-auto px1 md-px2 relative">
-          <div class="travel-input-group flex items-center col-12 rounded travel-shadow">
-            <input class="travel-input travel-input-big block col-12 flex-auto rounded-left" type="text" name="email" placeholder="Enter your email">
-            <span class="travel-input-group-sep travel-border-gray relative z1 block"></span>
-            <button type="button" class="travel-link travel-input-big nowrap rounded-right">
-              Sign up now
-            </button>
-          </div>
-        </div>
-      </div>
+<footer class="footer gradient">
+ <div class="container flex-container">
+	 <div class="footer-social">
+   <h3>
+        <span class="primary">Tania</span>
+        <strong class="secondary">Rascia</strong>
+      </h3>
+		 <p>Web designer/developer, autodidact, tech writer and problem solver. I love hiking, karaoke, recording music, and building communities. <strong><a href="<?php echo site_url(); ?>/contact">Say hello!</a></strong></p>
+	  <div class="social-icons">
+     <a href="https://www.taniarascia.com/feed"><i class="fa fa-rss fa-2x"></i></a>
+     <a href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+     <a href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+     <a href="https://stackoverflow.com/users/4541434/tania-rascia" target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a>
+     <a href="https://www.linkedin.com/in/taniarascia/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
     </div>
-    <!--/ Right column -->
-
-    <!-- Left column -->
-    <div class="max-width-3 mx-auto px1 md-px2">
-      <div class="flex pt3 md-pt4 col-12 md-col-6 pr3">
-        <div class="col-2">
-          <a href="travel.amp" class="inline-block h2 line-height-1 circle white">
-<svg class="travel-icon travel-icon-logo h2" viewbox="0 0 100 100"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="7.5"><circle cx="50" cy="50" r="45"></circle><path d="M20.395 83.158c-2.37-10.263-.79-18.553 4.737-24.87 8.29-9.472 17.763-1.183 26.052-9.472 8.29-8.29 2.37-18.948 10.658-26.053 5.526-4.737 12.237-6.316 20.132-4.737M39.084 95c-2.788-10.2-1.912-17.304 2.627-21.316 6.808-6.017 14.956-.68 24.088-9.623 9.13-8.94 3.062-17.133 10.255-23.534 4.795-4.267 10.282-5.668 16.46-4.203"></path></g></svg>          </a>
-        </div>
-        <div class="col-5">
-          <h4 class="travel-spacing-none mb2 h3 gray bold">Company</h4>
-          <div class="line-height-4 mb4">
-            <a href="#" class="travel-link block gray">About</a>
-            <a href="#" class="travel-link block gray">Careers</a>
-            <a href="#" class="travel-link block gray">Contact</a>
-          </div>
-        </div>
-        <div class="col-5">
-          <h4 class="travel-spacing-none mb2 h3 gray bold">Discover</h4>
-          <div class="line-height-4 mb4">
-            <a href="#" class="travel-link block gray">Activities</a>
-            <a href="#" class="travel-link block gray">Tours</a>
-            <a href="#" class="travel-link block gray">Experiences</a>
-            <a href="#" class="travel-link block gray">Featured Adventures</a>
-            <a href="#" class="travel-link block gray">Search</a>
-          </div>
-        </div>
-      </div>
-      <div class="py3 gray">
-        &copy; Copyright 2017
-      </div>
-    </div>
-    <!--/ Left column -->
-  </div>
+	 </div>
+	 <div class="footer-support">
+     <h3>About</h3>
+		 <p>My site is <strong class="secondary">free</strong> – and free of ads, clickbait, popups, guest posts, and sponsored content! Has this site been valuable to you? Please consider <strong class="secondary">donating</strong> so I can continue creating!</p>
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+      ">
+      <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="button secondary-button" value="Donate!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
+	 </div>
+	</div>
 </footer>
-<!--/ Footer  -->
-        </div>
-      </div>
-    </section>
-    <?php wp_footer(); ?>
-  </body>
+<?php } ?>
+</main>
+
+<?php if ( is_front_page() ) { ?>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+<?php } ?>
+<?php wp_footer(); ?>
+<?php if ( is_front_page() ) { ?>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "<?php echo site_url(); ?>",
+  "name": "<?php echo get_bloginfo( 'name'); ?> - <?php echo get_bloginfo( 'description' ); ?>",
+   "author": {
+      "@type": "Person",
+      "name": "Tania Rascia"
+    },
+  "description": "Web designer, developer, autodidact. Tania breaks down complex concepts in a clear, simple way for all skill levels.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "<?php echo site_url(); ?>/?s={search_term}",
+    "query-input": "required name=search_term" }
+    }
+</script>
+<?php } ?>
+<?php if ( is_page( 'me' ) ) { ?>
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "image": "<?php echo site_url(); ?>/wp-content/uploads/taniasmall.jpg",
+      "jobTitle": "Web developer",
+      "name": "Tania Rascia",
+      "gender": "female",
+      "url": "<?php echo site_url(); ?>",
+	    "sameAs" : [
+      "https://github.com/taniarascia",
+      "https://twitter.com/taniarascia"
+			]
+    }
+    </script>
+<?php } ?>
+
+<?php if ( is_singular() && !is_singular( 'work' ) && !is_front_page() ) { ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<script type="application/ld+json">
+{ "@context": "http://schema.org",
+ "@type": "TechArticle",
+ "headline": "<?php the_title(); ?>",
+ "proficiencyLevel": "Beginner/intermediate",
+ "image": "<?php echo the_post_thumbnail_url(); ?>",
+   "author": {
+      "@type": "Person",
+      "name": "Tania Rascia"
+    },
+ "genre": "<?php foreach((get_the_category()) as $category) { echo $category->cat_name . ', '; } ?>",
+ "keywords": "<?php
+  $posttags = get_the_tags();
+  if ($posttags) {
+    foreach($posttags as $tag) {
+      echo $tag->name . ', ';
+    }
+  }
+?>",
+ "url": "<?php the_permalink(); ?>",
+ "datePublished": "<?php the_time( 'Y-m-d' ); ?>",
+ "description": "<?php echo esc_html(get_the_excerpt()); ?>"
+ }
+</script>
+<?php endwhile; endif; ?>
+<?php } ?>
+</body>
+
 </html>

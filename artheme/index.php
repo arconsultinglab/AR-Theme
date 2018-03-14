@@ -1,12 +1,31 @@
-
 <?php get_header(); ?>
-<!-- Hero -->
 
-<main id="content" role="main">
-    <article >
-        Some text here
-    </article>
+<header class="page-header">
+	<div class="small-container">
+		<h1>Posts</h1>
+	</div>
+</header>
 
+<div class="small-container">
 
+	<?php
 
-<?php get_footer(); ?>
+		if ( have_posts() ) : while ( have_posts() ) : the_post();
+
+		 get_template_part( 'content-basic', get_post_format() );
+
+		endwhile; ?>
+
+	<div class="posts-links">
+		<div class="pagination-left">
+			<?php previous_posts_link(); ?>
+		</div>
+		<div class="pagination-right">
+			<?php next_posts_link(); ?>
+		</div>
+	</div>
+</div>
+
+<?php endif; ?>
+
+<?php get_footer();
