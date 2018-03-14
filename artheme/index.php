@@ -4,7 +4,7 @@
 
 <main id="content" role="main">
     <article >
-        Some text here
+        <h1>Hello AMPHTML World!</h1>
     </article>
 
 
