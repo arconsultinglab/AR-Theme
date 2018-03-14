@@ -1,4 +1,4 @@
-</section>
+  </main>
 <!--/ Discover mobile-->
 <!-- Footer -->
 <footer class="travel-footer overflow-hidden">
