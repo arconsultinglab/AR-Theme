@@ -571,6 +571,5 @@
       </p>
     </div>
   </div>
-</section>
-<!--/ Discover mobile-->
+
 <?php wp_footer(); ?>

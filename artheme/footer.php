@@ -1,4 +1,5 @@
-
+</section>
+<!--/ Discover mobile-->
 <!-- Footer -->
 <footer class="travel-footer overflow-hidden">
 
@@ -67,5 +68,6 @@
         </div>
       </div>
     </section>
+    <?php wp_footer(); ?>
   </body>
 </html>
