@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Blog Listing Page
+ *
+ * @package WordPress
+ * @subpackage artheme
+ * @since ARTheme 1.0
+ */?>
+ <?php get_header(); ?>
 
 <header class="page-header">
 	<div class="small-container">

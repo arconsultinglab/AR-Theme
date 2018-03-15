@@ -1,3 +1,11 @@
+<?php
+/**
+ * Template Name: Tutorials Page
+ *
+ * @package WordPress
+ * @subpackage artheme
+ * @since ARTheme 1.0
+ */?>
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

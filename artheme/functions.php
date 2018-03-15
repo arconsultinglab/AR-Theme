@@ -4,14 +4,14 @@
  * Functions for taniarascia.com
  */
 
-/** 
+/**
  * Add support for titles
  */
 
 add_theme_support( 'title-tag' );
 
-/** 
- * Add support for featured images 
+/**
+ * Add support for featured images
  */
 
 add_theme_support( 'post-thumbnails' );
@@ -25,7 +25,7 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-/** 
+/**
  * Add Categories for attachments
  */
 
@@ -36,8 +36,8 @@ add_action( 'init' , 'add_categories_for_attachments' );
 
 
 /**
- * Custom length for the_excerpt 
- */  
+ * Custom length for the_excerpt
+ */
 
 function custom_excerpt_length() {
 	if ( is_front_page() ) {
@@ -48,13 +48,13 @@ function custom_excerpt_length() {
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
 
-/** 
+/**
  * Support search form
  */
 
 add_theme_support( 'html5', array( 'search-form' ) );
 
-/** 
+/**
  * Change 'more' link
  */
 
@@ -63,7 +63,7 @@ function modify_read_more_link() {
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
-/** 
+/**
  * Include navigation menu
  */
 
@@ -72,7 +72,7 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-/** 
+/**
  * jQuery to the bottom
  */
 
@@ -84,7 +84,7 @@ function starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
-/** 
+/**
  *  Add stylesheets
  */
 
@@ -95,8 +95,8 @@ function oblate_scripts() {
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js?06-06-2017', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
- 
-/** 
+
+/**
  * Google Fonts
  */
 
@@ -106,7 +106,7 @@ function load_fonts() {
 	wp_enqueue_style( 'All' );
 	wp_enqueue_style( 'FontAwesome' );
 }
-add_action('wp_print_styles', 'load_fonts'); 
+add_action('wp_print_styles', 'load_fonts');
 
 // Disable XML RPC
 add_filter('xmlrpc_enabled', '__return_false');
@@ -120,7 +120,7 @@ function meta_og() {
 	if ( is_single() ) {
 		if(has_post_thumbnail($post->ID)) {
 			$img_src = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'thumbnail');
-		} 
+		}
 		$excerpt = strip_tags($post->post_content);
 		$excerpt_more = '';
 		if (strlen($excerpt) > 155) {
@@ -133,13 +133,13 @@ function meta_og() {
 		array_pop($excerptwords);
 		$excerpt = implode(' ', $excerptwords) . $excerpt_more;
 		?>
-<meta name="author" content="Tania Rascia">
+<meta name="author" content="AR Consulting Labs">
 <meta name="description" content="<?php echo $excerpt; ?>">
 <meta property="og:title" content="<?php echo the_title(); ?>">
 <meta property="og:description" content="<?php echo $excerpt; ?>">
 <meta property="og:type" content="article">
 <meta property="og:url" content="<?php echo the_permalink(); ?>">
-<meta property="og:site_name" content="Tania Rascia - Web Design and Development">
+<meta property="og:site_name" content="AR Consulting Labs - Marketing Digital Estratégico Empresarial">
 <meta property="og:image" content="<?php echo $img_src[0]; ?>">
 <?php
 	} else {
@@ -148,15 +148,15 @@ function meta_og() {
 }
 add_action('wp_head', 'meta_og', 5);
 
-/** 
+/**
  * Escape HTML
  */
 
 function escapeHTML($arr) {
 	// last params (double_encode) was added in 5.2.3
 	if (version_compare(PHP_VERSION, '5.2.3') >= 0) {
-	
-		$output = htmlspecialchars($arr[2], ENT_NOQUOTES, get_bloginfo('charset'), false); 
+
+		$output = htmlspecialchars($arr[2], ENT_NOQUOTES, get_bloginfo('charset'), false);
 	}
 	else {
 		$specialChars = array(
@@ -174,14 +174,14 @@ function escapeHTML($arr) {
 		return  $arr[1] . $output . $arr[3];
 	}	else 	{
 		return  $arr[1] . $arr[2] . $arr[3];
-	}	
+	}
 }
 
 function filterCode($data) {
 	//$modifiedData = preg_replace_callback('@(<pre.*>)(.*)(<\/pre>)@isU', 'escapeHTML', $data);
 	$modifiedData = preg_replace_callback('@(<code.*>)(.*)(<\/code>)@isU', 'escapeHTML', $data);
 	$modifiedData = preg_replace_callback('@(<tt.*>)(.*)(<\/tt>)@isU', 'escapeHTML', $modifiedData);
- 
+
 	return $modifiedData;
 }
 
@@ -204,21 +204,21 @@ function speed_stop_loading_wp_embed() {
 add_action('init', 'speed_stop_loading_wp_embed');
 
 /**
- * Remove contact form scripts 
+ * Remove contact form scripts
  */
 
 function load_contactform7_on_specific_page() {
    //  Edit page IDs here
-   if ( !is_page( 'contact' ) ) {		
+   if ( !is_page( 'contact' ) ) {
       wp_dequeue_script('contact-form-7'); // Dequeue JS Script file.
-      wp_dequeue_style('contact-form-7');  // Dequeue CSS file. 
+      wp_dequeue_style('contact-form-7');  // Dequeue CSS file.
    }
 }
 
 add_action( 'wp_enqueue_scripts', 'load_contactform7_on_specific_page' );
 
 /**
- * Remove Query String from Static Resources 
+ * Remove Query String from Static Resources
  */
 
 function remove_cssjs_ver( $src ) {
@@ -230,7 +230,7 @@ add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
 add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
 
 /**
- * Remove Query String from Static Resources 
+ * Remove Query String from Static Resources
  */
 
 function remove_cssjs_ver2( $src ) {
@@ -253,7 +253,7 @@ if ($query->is_search) {
 add_filter('pre_get_posts','exclude_pages');
 
 
-/** 
+/**
  * Work type
  */
 
@@ -282,11 +282,11 @@ function create_post_work() {
 }
 add_action('init', 'create_post_work'); // Add our work type
 
-/** 
+/**
  * Disable Website Field From Comment Form
  */
 
-function disable_website_field( $field ) { 
+function disable_website_field( $field ) {
 	if( isset($field['url']) ) {
 		unset( $field['url'] );
 	}

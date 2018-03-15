@@ -5,19 +5,19 @@
 		<h1>
 			<?php the_search_query(); ?>
 		</h1>
-		<p><strong><?php echo $wp_query->found_posts; ?></strong> results found.</p>
+		<p><strong><?php echo $wp_query->found_posts; ?></strong> Resultados encontrados.</p>
 	</div>
 </header>
 
 <div class="small-container">
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 			get_template_part( 'content-basic', get_post_format() );
 
 		endwhile; else: ?>
 
-	<h3 class="text-center">Sorry, no results were found!</h3>
+	<h3 class="text-center">Sorry, no se encontró lo que buscabas!</h3>
 
 	<?php endif; ?>
 
@@ -32,4 +32,4 @@
 
 </div>
 
-<?php get_footer(); 
+<?php get_footer();

@@ -1,3 +1,11 @@
+<?php
+/**
+ * Template Name: Resume Page
+ *
+ * @package WordPress
+ * @subpackage artheme
+ * @since ARTheme 1.0
+ */?>
 <?php get_header(); ?>
 
 <header class="resume-header">
@@ -31,7 +39,7 @@
 
 			$work = new WP_Query( $args );
 
-			if ( $work->have_posts() ) :  while ( $work->have_posts() ) : $work->the_post(); 
+			if ( $work->have_posts() ) :  while ( $work->have_posts() ) : $work->the_post();
 			$url = get_post_meta($post->ID, 'url', true); ?>
 
 						<article id="post-<?php the_ID(); ?>" class="cell">

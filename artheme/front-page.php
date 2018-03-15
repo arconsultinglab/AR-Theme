@@ -1,3 +1,11 @@
+<?php
+/**
+ * Template Name: Home Page
+ *
+ * @package WordPress
+ * @subpackage artheme
+ * @since ARTheme 1.0
+ */?>
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -78,7 +86,7 @@
 
 			$latest = new WP_Query( $args );
 
-			if ( $latest->have_posts() ) :  while ( $latest->have_posts() ) : $latest->the_post(); 
+			if ( $latest->have_posts() ) :  while ( $latest->have_posts() ) : $latest->the_post();
 
 				 get_template_part( 'content', get_post_format() );
 
@@ -101,7 +109,7 @@
 
 			$popular = new WP_Query( $args );
 
-			if ( $popular->have_posts() ) :  while ( $popular->have_posts() ) : $popular->the_post(); 
+			if ( $popular->have_posts() ) :  while ( $popular->have_posts() ) : $popular->the_post();
 
 				 get_template_part( 'content', get_post_format() );
 
@@ -126,7 +134,7 @@
 
 			$thoughts = new WP_Query( $args );
 
-			if ( $thoughts->have_posts() ) :  while ( $thoughts->have_posts() ) : $thoughts->the_post(); 
+			if ( $thoughts->have_posts() ) :  while ( $thoughts->have_posts() ) : $thoughts->the_post();
 
 				 get_template_part( 'content', get_post_format() );
 
