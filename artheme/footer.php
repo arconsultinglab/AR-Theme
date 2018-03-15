@@ -50,7 +50,7 @@
 <?php } ?>
 </main>
 
-<!--<?php if ( is_front_page() ) { ?>
+<?php if ( is_front_page() ) { ?>
 
 <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
@@ -135,7 +135,7 @@
  }
 </script>
 <?php endwhile; endif; ?>
-<?php } ?>-->
+<?php } ?>
 </body>
 
 </html>
