@@ -15,8 +15,8 @@
 		<div class="header-main">
 			<h1>I'm a web <span class="primary">designer</span>/<span class="secondary">developer</span><br> who loves sharing knowledge.</h1>
 			<?php the_content(); ?>
-			<a class="github-button" href="https://github.com/taniarascia" data-show-count="true" data-size="large" aria-label="Follow @taniarascia on GitHub">Follow</a>
-			<a class="twitter-follow-button" data-size="large" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
+			<a class="github-button" href="https://github.com/arconsultinglab/" data-show-count="true" data-size="large" aria-label="Follow @taniarascia on GitHub">Follow</a>
+			<a class="twitter-follow-button" data-size="large" data-show-screen-name="false" href="https://twitter.com/arconsultinglab">Follow</a>
 		</div>
 		<div class="header-email">
 			<h3>Tania's List</h3>

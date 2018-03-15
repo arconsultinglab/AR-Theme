@@ -1,10 +1,10 @@
 <?php if ( !is_page( 'resume' ) ) { ?>
 <section class="newsletter">
 	<div class="small-container text-center">
-		<h2>Tania's List</h2>
-		<p>My tutorials, guides, and articles for <strong>web designers, developers, and autodidacts</strong>, sent out once a month or so. No bullshit, ads, or tricks.</p>
+		<h2>Forma parte de nuestra selecta lista</h2>
+		<p>Te enviaremos trucos, guias y artículos relacionados a <strong>diseño web, adwords, redes sociales y todo lo relacionado al Marketing Estratégico</strong>, lo enviamos una vez al mes, sin publicidad, ni promociones, tu decides cuando necesites de nuestros servicios.</p>
 		<div id="mc_embed_signup">
-			<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				<label for="mce-EMAIL"><span class="screen-reader-text">Email</span></label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
 				<div id="mce-responses" class="clear">
 					<div class="response" id="mce-error-response" style="display:none"></div>
@@ -22,8 +22,8 @@
  <div class="container flex-container">
 	 <div class="footer-social">
    <h3>
-        <span class="primary">Tania</span>
-        <strong class="secondary">Rascia</strong>
+        <span class="primary">AR </span>
+        <strong class="secondary">Consulting Labs</strong>
       </h3>
 		 <p>Web designer/developer, autodidact, tech writer and problem solver. I love hiking, karaoke, recording music, and building communities. <strong><a href="<?php echo site_url(); ?>/contact">Say hello!</a></strong></p>
 	  <div class="social-icons">
