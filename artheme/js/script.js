@@ -1,17 +1,8 @@
-console.log('Hello, fellow developer! Thanks for visiting. :)'
-					+ '\n\nIn case you\'re wondering, the design and theme'
-					+ '\nof this blog is completely custom, based on my own'
-					+ '\nCSS/Sass framework, Primitive. Check it out!'
-					+ '\nhttps://taniarascia.github.io/primitive'
-					+ '\n\nLike the syntax theme for code you see on my site?'
-					+ '\nNew Moon is available for Atom, Brackets, VSCode and Sublime!'
-					+ '\nhttps://taniarascia.github.io/new-moon'
-					+ '\n\nIf you\'re hiring, my resume can be found here:'
-					+ '\nhttps://www.taniarascia.com/resume');
+console.log('Hello, fellow developer! Thanks for visiting. :)';
 
 /*
- * Konami-JS ~ 
- * :: Now with support for touch events and multiple instances for 
+ * Konami-JS ~
+ * :: Now with support for touch events and multiple instances for
  * :: those situations that call for multiple easter eggs!
  * Code: https://github.com/snaptortoise/konami-js
  * Examples: http://www.snaptortoise.com/konami-js
