@@ -41,8 +41,9 @@
 	 </div>
 	</div>
 </footer>
- ?>
+<?php } ?>
 </main>
+?>
 </body>
 
 </html>
