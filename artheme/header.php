@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<?php if ( !is_single() ) { ?>
-	<meta name="description" content="Web developer, designer, autodidact. Tania breaks down complex concepts in a clear, simple way for all skill levels.">
+	<meta name="description" content="Empresa dedicada al desarrollo de estrategias digitales, sitios web y lo necesario para alcanzar el éxito de nuestros clientes ">
 	<?php } ?>
 
 	<?php wp_head(); ?>
@@ -23,8 +23,8 @@
 </head>
 
 <body>
-	<h1 class="screen-reader-text">Tania Rascia Web Design and Development</h1>
-	<a class="screen-reader-text" href="#main-content">Skip Navigation</a>
+	<h1 class="screen-reader-text">AR Consulting Labs Creando Estrategias Digitales para Empresas</h1>
+	<a class="screen-reader-text" href="#main-content">Saltar Navigación</a>
 
 	<header class="main-nav-outer">
 		<div class="nav-container">
@@ -32,7 +32,7 @@
 			<a href="<?php echo site_url(); ?>" class="home <?php if ( is_front_page() ) { ?>current<?php } ?>"><i class="fa fa-home" aria-hidden="true"></i> <span>Tour</span></a>
 			<a href="<?php echo site_url(); ?>/tutorials" class="tutorials <?php if ( is_page( 'tutorials' ) ) { ?>current<?php } ?>"><i class="fa fa-map-o" aria-hidden="true"></i> <span>Desarrollo Web</span></a>
 			<a href="<?php echo site_url(); ?>/snippets" class="snippets <?php if ( is_page( 'snippets' ) ) { ?>current<?php } ?>"><i class="fa fa-scissors" aria-hidden="true"></i> <span>Estrategias</span></a>
-			<a href="<?php echo site_url(); ?>/me" class="tania <?php if ( is_page( 'me' ) ) { ?>current<?php } ?>"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Industrias</span></a>
+			<a href="<?php echo site_url(); ?>/me" class="tania <?php if ( is_page( 'me' ) ) { ?>current<?php } ?>"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Empresas</span></a>
 			<a href="<?php echo site_url(); ?>/work" class="portfolio <?php if ( is_page( 'work' ) ) { ?>current<?php } ?>"><i class="fa fa-folder-open-o" aria-hidden="true"></i> <span>Inspiración</span></a>
 			<a href="<?php echo site_url(); ?>/thoughts" class="thoughts <?php if ( is_page( 'thoughts' ) ) { ?>current<?php } ?>"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Contactanos</span></a>
 		</nav>
