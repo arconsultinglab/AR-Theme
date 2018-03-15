@@ -9,7 +9,7 @@
 
 <header class="page-header ">
 	<div class="small-container">
-		<h1>
+		<h1 class="entry-title">
 			<?php the_title(); ?>
 		</h1>
 
