@@ -15,10 +15,16 @@
 		<h1>
 			<?php the_title(); ?>
 		</h1>
-		<?php the_content(); ?>
+
 	</div>
 </header>
+<section class="section-content">
 
+
+			<?php the_content(); ?>
+
+
+</section>
 <?php endwhile; endif; ?>
 
 <section class="quote-container">

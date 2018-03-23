@@ -15,10 +15,16 @@
 
 		</div>
 	</header>
+	<section class="section-content">
 
+
+				<?php the_content(); ?>
+
+
+	</section>
 	<section class="single-body">
 		<div class="small-container">
-			<?php the_content(); ?>
+
 			<div class="section-content share" id="share">
 				<a href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=taniarascia&hashtags=webdev" target="_blank">
 				<span class="fa-stack fa-lg">
