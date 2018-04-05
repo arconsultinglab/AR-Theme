@@ -1,4 +1,9 @@
 <?php
+/**
+ * Template Name: Contact Us Page Template
+ *
+ */?>
+<?php
 
   //response generation function
 
